@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class mainBird : MonoBehaviour {
 public float Speed = 5.0f;
 public bool msg = false;
+public float minSpace ;
+public float maxSpace ;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,24 +19,23 @@ public bool msg = false;
 		if (Input.GetMouseButtonDown(0)){
             jump();
 		}
-
-    	if(msg){
-    		//alert("toca");
-    	}
+		 if (Input.GetKeyDown("space")){
+		 	jump();
+		 }
+            
         
-
-		
 	}
+
+	void OnCollisionEnter2D(Collision2D coll) {
+        if (coll.gameObject.name == "ground"){
+            print("Juego terminado");
+        }    
+    }
+	
 	void jump(){
         GetComponent<Rigidbody2D>().velocity = Vector3.up * Speed;	
 	}
-	void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.name == "ground"){
-			msg = true;
-			print("toca");
-		}
-	}
+	
 
 }
 
