@@ -1,0 +1,13 @@
+<dependencies>
+  <packages>
+    <package>com.google.android.gms:play-services-base:12.0.1</package>
+    <package>com.google.firebase:firebase-analytics:12.0.1</package>
+    <package>com.google.firebase:firebase-analytics-unity:4.5.1</package>
+    <package>com.google.firebase:firebase-app-unity:4.5.1</package>
+    <package>com.google.firebase:firebase-auth:12.0.1</package>
+    <package>com.google.firebase:firebase-auth-unity:4.5.1</package>
+    <package>com.google.firebase:firebase-common:12.0.1</package>
+    <package>com.google.firebase:firebase-core:12.0.1</package>
+  </packages>
+  <files />
+</dependencies>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://flappybird-aa5a0.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">990700836288</string>
+  <string name="google_storage_bucket" translatable="false">flappybird-aa5a0.appspot.com</string>
+  <string name="project_id" translatable="false">flappybird-aa5a0</string>
+  <string name="google_api_key" translatable="false">AIzaSyDalbdRcF8TRdVZ0JFXjU8e5e3QINg5DQY</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDalbdRcF8TRdVZ0JFXjU8e5e3QINg5DQY</string>
+  <string name="google_app_id" translatable="false">1:990700836288:android:5f94a0dc096ba853</string>
+  <string name="default_web_client_id" translatable="false">990700836288-mf65tmlgo8v2br2t0msh1uu92ub97qkq.apps.googleusercontent.com</string>
+</resources>

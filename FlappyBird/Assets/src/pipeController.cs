@@ -19,11 +19,15 @@ public class pipeController : MonoBehaviour {
 	void Update () {
 		
 	}
+ 
 
+    void OnCollisionExit2D(Collision2D coll) {
+        if(coll.gameObject.tag == "obstacles"){
+            print("fuera");
+        }        
+    }
 	void OnTriggerEnter2D(Collider2D col) {
-			print("entra");
 		count = Random.Range(1,4);
-		print(objPosition.transform.position);
 		if(col.gameObject.tag == "obstacles"){
 			if(count == 1){
 				Instantiate(obj1,objPosition.transform.position,Quaternion.identity);
@@ -38,5 +42,7 @@ public class pipeController : MonoBehaviour {
 				Instantiate(obj4,objPosition.transform.position,Quaternion.identity);
 			}
 		}
-	}
+        Destroy(col.gameObject);
+
+        }
 }
